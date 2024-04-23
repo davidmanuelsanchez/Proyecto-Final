@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Fondo gris */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.menu-nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu-nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-nav li a:hover {
+    color: #FFD700; /* Color when hovered */
+}
+
+.productos-section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+    background-color: white;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.article {
+    margin-bottom: 40px;
+}
+
+.article h2 {
+    color: #333;
+}
+
+.imagen1,
+.imagen2,
+.imagen3 {
+    text-align: center;
+    overflow: hidden; /* Para el efecto de zoom */
+    position: relative; /* Para el efecto de zoom */
+}
+
+.imagen1 img,
+.imagen2 img,
+.imagen3 img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+.imagen1:hover img,
+.imagen2:hover img,
+.imagen3:hover img {
+    transform: scale(1.1); /* Efecto de zoom */
+}
+
+.parrafo {
+    color: #666;
+}
+
+/* Media queries para dispositivos */
+@media (max-width: 768px) {
+    .menu-nav li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .productos-section {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .productos-section {
+        padding: 0 5px;
+    }
+}

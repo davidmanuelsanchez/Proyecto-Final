@@ -1,0 +1,166 @@
+/* Estilos base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Fondo gris */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Para hacer horizontal */
+    justify-content: center; /* Centrar elementos */
+}
+
+.menu-nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu-nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-nav li a:hover {
+    color: #FFD700; /* Color when hovered */
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efecto de levantar un poco al pasar el mouse */
+}
+
+.card h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.card p {
+    color: #666;
+}
+
+.consulta-pagos {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.pagos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-gap: 20px;
+    justify-items: center;
+    margin-bottom: 20px;
+}
+
+.pagos-grid img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.pagos-grid img:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+}
+
+/* Media Queries para dispositivos */
+@media screen and (max-width: 768px) {
+    .menu-nav li {
+        margin-right: 10px;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .card h2 {
+        font-size: 18px;
+    }
+
+    .card img {
+        border-radius: 6px;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+
+    .consulta-pagos {
+        margin-top: 30px;
+    }
+
+    .pagos-grid {
+        grid-gap: 15px;
+    }
+
+    .pagos-grid img {
+        border-radius: 6px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .menu-nav li {
+        margin-right: 0;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .card {
+        margin-bottom: 15px;
+    }
+
+    .card h2 {
+        font-size: 16px;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+
+    .consulta-pagos {
+        margin-top: 20px;
+    }
+
+    .pagos-grid {
+        grid-gap: 10px;
+    }
+}

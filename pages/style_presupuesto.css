@@ -1,0 +1,166 @@
+/* Reset de estilos */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, img, pre, code, form, fieldset, legend, textarea, input[type="email"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="checkbox"], input[type="radio"], input[type="submit"], button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Barra de navegación */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Grid de imágenes */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.grid img {
+    width: 100%;
+    height: auto;
+}
+
+/* Formulario de contacto */
+.form-container {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Pie de página */
+footer {
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Media Queries para todos los dispositivos */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    nav ul li {
+        margin-right: 10px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    form input[type="email"],
+    form textarea {
+        padding: 8px;
+    }
+
+    form button[type="submit"] {
+        padding: 8px 16px;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .grid img {
+        width: 100%;
+        height: auto;
+    }
+
+    form input[type="email"],
+    form textarea {
+        padding: 8px;
+    }
+
+    form button[type="submit"] {
+        padding: 8px 16px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}

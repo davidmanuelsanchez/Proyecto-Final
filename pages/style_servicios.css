@@ -1,0 +1,233 @@
+/* Estilos base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu-nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-nav li a:hover {
+    color: #FFD700;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.servicios {
+    margin-bottom: 30px;
+}
+
+.servicios h3 {
+    color: #333;
+}
+
+.servicios img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.servicios img:hover {
+    transform: scale(1.05);
+}
+
+.servicios h4 {
+    color: #666;
+    margin-top: 10px;
+}
+
+.cuadro {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.contenedor img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto; /* Centrar las imágenes horizontalmente */
+}
+
+.contenedor p {
+    color: #333;
+    margin-top: 15px;
+}
+
+.container-clientes {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.grid-clientes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.grid-clientes img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.grid-clientes img:hover {
+    transform: scale(1.05);
+}
+
+.grid-clientes p {
+    color: #666;
+    margin-top: 15px;
+}
+
+/* Media Queries para dispositivos */
+@media screen and (max-width: 768px) {
+    .menu-nav li {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .menu-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-nav li {
+        margin-bottom: 10px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .servicios {
+        margin-bottom: 20px;
+    }
+
+    .servicios h3 {
+        font-size: 18px;
+    }
+
+    .servicios img {
+        border-radius: 6px;
+    }
+
+    .servicios h4 {
+        font-size: 14px;
+    }
+
+    .cuadro {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .contenedor img {
+        border-radius: 6px;
+    }
+
+    .contenedor p {
+        font-size: 14px;
+    }
+
+    .container-clientes {
+        padding: 15px;
+    }
+
+    .grid-clientes {
+        gap: 15px;
+    }
+
+    .grid-clientes img {
+        border-radius: 6px;
+    }
+
+    .grid-clientes p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .menu-nav li {
+        margin-right: 0;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .servicios h3 {
+        font-size: 16px;
+    }
+
+    .servicios h4 {
+        font-size: 12px;
+    }
+
+    .cuadro {
+        padding: 10px;
+    }
+
+    .contenedor p {
+        font-size: 12px;
+    }
+
+    .container-clientes {
+        padding: 10px;
+    }
+
+    .grid-clientes {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-clientes img {
+        border-radius: 6px;
+    }
+
+    .grid-clientes p {
+        font-size: 12px;
+    }
+}
+
+/* Estilos específicos para las imágenes de clientes */
+.grid-clientes {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
